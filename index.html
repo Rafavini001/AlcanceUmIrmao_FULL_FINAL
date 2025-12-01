@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Alcance um Irmão</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"></head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html" aria-label="Alcance um Irmão">
+      <!-- Logo SVG inline small -->
+      <svg class="logo-svg" width="40" height="40" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+        <defs><linearGradient id="lg2" x1="0" x2="1"><stop offset="0" stop-color="#4A90E2"/><stop offset="1" stop-color="#3CB371"/></linearGradient></defs>
+        <rect rx="10" width="48" height="48" fill="url(#lg2)"/>
+        <g fill="#fff"><path d="M14 22c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8-8-3.6-8-8z"/><path d="M11 36c0-4.4 6-8 13-8s13 3.6 13 8v3H11v-3z" opacity="0.9"/></g>
+      </svg>
+      <span class="brand">Alcance um Irmão</span>
+    </a>
+    <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="mainNav" aria-label="Abrir menu">☰</button>
+    <nav id="mainNav" class="nav" role="navigation">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="about.html">Sobre</a></li>
+        <li><a href="how.html">Como Funciona</a></li>
+        <li><a href="projects.html">Projetos</a></li>
+        <li><a href="volunteer.html">Torne-se Voluntário</a></li>
+        <li><a href="help.html">Solicitar Ajuda</a></li>
+        <li><a href="contact.html">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero fade-target">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <h1>Conectando pessoas que precisam com quem pode ajudar.</h1>
+        <p class="lead">Apoio gratuito oferecido por profissionais voluntários nas áreas de saúde, educação, assistência social e jurídica.</p>
+        <div class="cta-group">
+          <a class="btn btn-primary" href="volunteer.html">Quero ser Voluntário</a>
+          <a class="btn btn-ghost" href="help.html">Preciso de Ajuda</a>
+        </div>
+        <div class="stats" style="margin-top:18px">
+          <div><strong id="stat-vols">0</strong><div class="muted">Voluntários</div></div>
+          <div><strong id="stat-cases">0</strong><div class="muted">Atendimentos</div></div>
+        </div>
+      </div>
+      <div class="hero-visual fade-target">
+        <img src="assets/images/banner-hero.svg" alt="Voluntários" style="width:100%;height:auto;max-width:520px;border-radius:12px"/>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-white fade-target">
+    <div class="container split">
+      <div>
+        <h2>Sobre a ONG</h2>
+        <p>A ONG <strong>Alcance um Irmão</strong> conecta pessoas em situação de vulnerabilidade a profissionais voluntários que oferecem apoio gratuito. O sistema organiza cadastros, solicitações e atendimentos para garantir que cada pessoa receba atendimento adequado.</p>
+        <ul class="values"><li><strong>Missão:</strong> Facilitar acesso a apoio profissional gratuito.</li><li><strong>Visão:</strong> Ser referência local em encaminhamento social.</li><li><strong>Valores:</strong> Empatia, ética, transparência e colaboração.</li></ul>
+      </div>
+      <div class="card-ghost">
+        <h3>Propósito</h3>
+        <p>Organizar voluntários por área de atuação, gerenciar solicitações e promover acolhimento humano, ético e seguro.</p>
+        <a class="btn btn-ghost" href="how.html">Como funciona</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt fade-target">
+    <div class="container">
+      <h2>Áreas de Atuação</h2>
+      <div class="grid-3" style="margin-top:18px">
+        <div class="area-card"><h4>Apoio psicológico</h4><p class="muted">Escuta qualificada e suporte emocional.</p></div>
+        <div class="area-card"><h4>Suporte jurídico</h4><p class="muted">Orientações e encaminhamentos legais.</p></div>
+        <div class="area-card"><h4>Educação</h4><p class="muted">Reforço escolar e capacitação.</p></div>
+        <div class="area-card"><h4>Assistência social</h4><p class="muted">Encaminhamentos e rede de apoio.</p></div>
+        <div class="area-card"><h4>Saúde básica</h4><p class="muted">Triagem e orientação inicial.</p></div>
+        <div class="area-card"><h4>Orientações gerais</h4><p class="muted">Informações e encaminhamentos.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-white fade-target">
+    <div class="container">
+      <h2>Dados e Informação</h2>
+      <div class="data-tables" style="margin-top:18px">
+        <div class="table-card">
+          <h4>Dado → Informação</h4>
+          <table class="data-table">
+            <thead><tr><th>Dado</th><th>Informação</th><th>Justificativa</th></tr></thead>
+            <tbody>
+              <tr><td>João – Psicólogo</td><td>Indicado para apoio emocional</td><td>Profissão + disponibilidade ⇒ encaixe</td></tr>
+              <tr><td>Solicitação 108 – Jurídica</td><td>Alta demanda jurídica</td><td>Agregação de solicitações revela tendência</td></tr>
+              <tr><td>Disponibilidade: Fins de semana</td><td>Poucos voluntários aos sábados</td><td>Verificação de horários revela lacunas</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table-card">
+          <h4>Estruturados × Não Estruturados</h4>
+          <table class="data-table">
+            <thead><tr><th>Estruturados</th><th>Não Estruturados</th></tr></thead>
+            <tbody><tr><td>Nome, e-mail, área, data</td><td>Relatos, descrições livres, anotações</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="container footer-grid">
+    <div class="footer-box">
+      <strong>Alcance um Irmão</strong>
+      <p class="muted">Feito com ❤️ para transformar vidas</p>
+    </div>
+    <div class="footer-box">
+      <p>Contato: <a href="mailto:contato@alcanceumirmao.org">contato@alcanceumirmao.org</a></p>
+      <p>Redes: <a href="#" aria-label="Facebook">Facebook</a> · <a href="#" aria-label="Instagram">Instagram</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="scripts.js"></script>
+</body>
+</html>
