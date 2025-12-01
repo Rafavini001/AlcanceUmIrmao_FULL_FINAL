@@ -1,268 +1,254 @@
-📘 Projeto Completo – Alcance um Irmão
-Banco de Dados + Site Oficial + Scripts SQL + Estrutura Completa
+# Projeto Completo -- Alcance um Irmão
 
-Este repositório contém o projeto completo da ONG fictícia Alcance um Irmão, integrando modelagem de banco de dados, implementação SQL, normalização, scripts DML completos e o desenvolvimento de um site moderno e responsivo, totalmente alinhado ao minimundo definido na disciplina de Modelagem de Banco de Dados.
+Banco de Dados • Site Oficial • Scripts SQL • Documentação EP4
 
-⭐ 1. Objetivo Geral
+Este repositório reúne todos os componentes do projeto completo da ONG
+fictícia **Alcance um Irmão**, abrangendo modelagem de dados,
+implementação SQL e desenvolvimento de um site totalmente funcional e
+responsivo.
 
-Criar uma solução completa que permita:
+------------------------------------------------------------------------
 
-Registrar voluntários com diferentes áreas de atuação
+## ⭐ 1. Objetivo Geral
 
-Receber e gerenciar solicitações de ajuda
+O projeto foi desenvolvido para:
 
-Registrar atendimentos e encaminhamentos
+-   Registrar voluntários com diferentes especialidades\
+-   Receber e gerenciar solicitações de ajuda\
+-   Registrar atendimentos e encaminhamentos\
+-   Disponibilizar um site profissional para interação com usuários e
+    voluntários\
+-   Criar banco de dados real utilizando MySQL\
+-   Demonstrar domínio da linguagem SQL (INSERT, SELECT, UPDATE,
+    DELETE)\
+-   Entregar documentação completa conforme exigências acadêmicas
 
-Disponibilizar um site acessível e funcional para a ONG
+O projeto contempla:
 
-Construir um banco de dados relacional completo, com scripts SQL 100% funcionais
+✔ Minimundo\
+✔ DER\
+✔ Modelo Lógico\
+✔ Scripts SQL\
+✔ Documentação EP4\
+✔ Estrutura profissional do repositório\
+✔ Website completo e responsivo
 
-Demonstrar domínio sobre:
+------------------------------------------------------------------------
 
-✔ Minimundo
+## 📁 2. Estrutura Completa do Repositório
 
-✔ DER
+    /EP4-Alcance-Um-Irmao/
+    │
+    ├── assets/                     # Imagens, ícones, logotipos e banners
+    │
+    ├── index.html                 # Home
+    ├── about.html                 # Sobre a ONG
+    ├── projects.html              # Projetos sociais
+    ├── how.html                   # Como funciona
+    ├── volunteer.html             # Cadastro de voluntários
+    ├── help.html                  # Solicitar ajuda
+    ├── contact.html               # Contatos da ONG
+    │
+    ├── styles.css                 # Estilo global
+    ├── scripts.js                 # Funções de interação
+    │
+    ├── 01_create_tables.sql       # Criação das tabelas
+    ├── 02_insert_data.sql         # Inserção dos dados iniciais
+    ├── 03_queries_select.sql      # Consultas SELECT reais
+    ├── 04_updates.sql             # Comandos UPDATE
+    ├── 05_deletes.sql             # Comandos DELETE
+    │
+    └── README.md                  # Documento principal
 
-✔ Modelo lógico
+------------------------------------------------------------------------
 
-✔ Scripts SQL (CREATE, INSERT, SELECT, UPDATE, DELETE)
+## 🌐 3. Sobre a ONG -- Alcance um Irmão
 
-✔ Documentação técnica profissional
+A **Alcance um Irmão** é uma ONG voltada para conectar pessoas em
+situação de vulnerabilidade a **profissionais voluntários**, oferecendo
+apoio gratuito em diversas áreas como:
 
-✔ Boa arquitetura de projeto
+-   Psicologia\
+-   Serviço social\
+-   Jurídico\
+-   Educação\
+-   Saúde preventiva\
+-   Orientação geral
 
-📁 2. Estrutura Completa do Repositório
-/EP4-Alcance-Um-Irmao/
-│
-├── assets/                     # Imagens, ícones, logotipos, banners
-│
-├── index.html                 # Página principal (Home)
-├── about.html                 # Página "Sobre a ONG"
-├── projects.html              # Projetos sociais
-├── how.html                   # Como funciona o sistema
-├── volunteer.html             # Cadastro de voluntários
-├── help.html                  # Solicitar ajuda
-├── contact.html               # Contato da ONG
-│
-├── styles.css                 # Estilo global do site
-├── scripts.js                 # Interações JS do site
-│
-├── 01_create_tables.sql       # Criação das tabelas (DDL)
-├── 02_insert_data.sql         # Inserção de dados do minimundo (DML)
-├── 03_queries_select.sql      # Consultas SELECT
-├── 04_updates.sql             # Comandos UPDATE
-├── 05_deletes.sql             # Comandos DELETE
-│
-└── README.md                  # Documento atual
+O sistema foi construído a partir do minimundo definido durante a
+disciplina de Modelagem de Banco de Dados e é totalmente coerente com o
+funcionamento real de uma plataforma social de apoio.
 
-🌐 3. Sobre a ONG – Alcance um Irmão
+------------------------------------------------------------------------
 
-A Alcance um Irmão é uma ONG criada com o propósito de conectar pessoas em situação de vulnerabilidade a profissionais voluntários dispostos a oferecer ajuda gratuita em diversas áreas, como:
+## 🧩 4. Banco de Dados -- Modelo Lógico
 
-Psicologia
+### Entidades Principais
 
-Assistência social
+-   **VOLUNTARIO**
+-   **SOLICITANTE**
+-   **SOLICITACAO**
+-   **ATENDIMENTO**
 
-Jurídico
+### Relacionamentos
 
-Educação e reforço escolar
+-   Um solicitante pode registrar várias solicitações\
+-   Cada solicitação pode gerar vários atendimentos\
+-   Cada atendimento é realizado por um voluntário
 
-Saúde preventiva
+### Integridade e Normalização
 
-Orientação geral
+-   Todas as tabelas possuem **PK**\
+-   Relacionamentos são garantidos via **FK**\
+-   O modelo está normalizado até **3FN**\
+-   Estrutura sem redundâncias e com consistência referencial
 
-Este projeto foi desenvolvido com base no minimundo oficial apresentado em Modelagem de Banco de Dados.
+------------------------------------------------------------------------
 
-🏗️ 4. Banco de Dados – Modelo Lógico
+## 🧱 5. Scripts SQL Contidos no Repositório
 
-A modelagem lógica foi construída a partir de um DER normalizado e apresenta as seguintes entidades principais:
-
-✔ VOLUNTARIO
-✔ SOLICITANTE
-✔ SOLICITACAO
-✔ ATENDIMENTO
-🔗 Integridade garantida com PK / FK
-
-Cada Solicitante → pode gerar várias Solicitações
-
-Cada Solicitação → pode gerar vários Atendimentos
-
-Cada Atendimento → é realizado por um Voluntário
-
-🧱 5. Scripts SQL Contidos no Repositório
-📌 01_create_tables.sql
-
-Inclui:
-
-Criação do banco e tabelas
-
-Definição de chaves primárias (PK)
-
-Definição de chaves estrangeiras (FK)
-
-Integridade referencial
-
-Tipos adequados para cada atributo
-
-📌 02_insert_data.sql
-
-Contém dados reais do minimundo, incluindo:
-
-Inserção de voluntários
-
-Inserção de solicitantes
-
-Inserção de solicitações
-
-Inserção de atendimentos
-
-Todos os dados foram montados para reforçar a coerência do sistema.
-
-📌 03_queries_select.sql
-
-Inclui consultas utilizando:
-
-JOIN
-
-WHERE
-
-GROUP BY
-
-ORDER BY
-
-LIMIT
-
-Filtros reais aplicáveis ao sistema
-
-Consultas entregam resultados úteis como:
-
-Solicitações abertas
-
-Acompanhamento de atendimentos
-
-Relatórios por tipo de ajuda
-
-Relação voluntário → atendimentos
-
-📌 04_updates.sql
+### 📌 01_create_tables.sql
 
 Inclui:
 
-Atualizações de disponibilidade
+-   Criação do banco\
+-   Criação de todas as tabelas\
+-   Definição de PK e FK\
+-   Tipos de dados coerentes\
+-   Regras de integridade referencial
 
-Mudança de status de solicitações
+### 📌 02_insert_data.sql
 
-Correção de cadastro
+Inclui:
 
-Respeitando todas as restrições de integridade.
+-   Voluntários reais do minimundo\
+-   Solicitantes\
+-   Solicitações completas\
+-   Atendimentos registrados
 
-📌 05_deletes.sql
+### 📌 03_queries_select.sql
 
-Contém:
+Consultas com:
 
-Exclusões condicionais
+-   JOIN\
+-   WHERE\
+-   GROUP BY\
+-   ORDER BY\
+-   LIMIT
 
-Remoções seguras
+### 📌 04_updates.sql
 
-Preservação da integridade referencial
+Inclui:
 
-🖥️ 6. Site Completo Incluído no Repositório
+-   Atualização de disponibilidade\
+-   Ajuste de status\
+-   Correção de registros específicos
 
-Todas as páginas foram desenvolvidas:
+### 📌 05_deletes.sql
 
-Totalmente responsivas
+Inclui:
 
-Mobile-first
+-   Exclusões seguras\
+-   Condições aplicadas\
+-   Preservação da integridade
 
-Com estilo corporativo moderno
+------------------------------------------------------------------------
 
-Tipografia profissional
+## 🖥️ 6. Site Completo Incluído no Repositório
 
-Paleta visual azul + cinza
+### Estrutura do Site
 
-Navegação intuitiva
+O site foi construído com:
 
-Conteúdo alinhado ao minimundo
+-   Design corporativo azul/cinza\
+-   Layout responsivo (mobile-first)\
+-   HTML5, CSS3 e JavaScript\
+-   Seções relevantes à ONG
 
-Páginas inclusas:
-Página	Função
-index.html	Página inicial, chamada para ação
-about.html	Sobre a ONG e sua missão
-how.html	Explicação do funcionamento
-volunteer.html	Cadastro de voluntários
-help.html	Solicitação de ajuda
-contact.html	Contato e informações
-projects.html	Projetos e áreas de atuação
+### Páginas incluídas:
 
-Também estão incluídos:
+-   **index.html** -- Página inicial\
+-   **about.html** -- Sobre a ONG\
+-   **how.html** -- Como funciona\
+-   **volunteer.html** -- Cadastro de voluntários\
+-   **help.html** -- Solicitar ajuda\
+-   **contact.html** -- Contato\
+-   **projects.html** -- Áreas de atuação e projetos
 
-styles.css – Estilo global responsivo
+### Arquivos de estilo e scripts
 
-scripts.js – Funções e interações leves
+-   **styles.css** -- Estilo corporativo global\
+-   **scripts.js** -- Funções JS e interações
 
-assets/ – Logos, banners, ícones e imagens
+------------------------------------------------------------------------
 
-🧪 7. Como Executar o Projeto
-📌 Banco de Dados
+## 🧪 7. Como Executar o Projeto
 
-Abra o MySQL Workbench ou PGAdmin
+### 🔹 Banco de Dados
 
-Execute o script:
+1.  Abra o MySQL Workbench ou PGAdmin\
+2.  Execute:
 
-01_create_tables.sql
+```{=html}
+<!-- -->
+```
+    01_create_tables.sql
 
+3.  Povoamento:
 
-Execute:
+```{=html}
+<!-- -->
+```
+    02_insert_data.sql
 
-02_insert_data.sql
+4.  Testes:
 
+```{=html}
+<!-- -->
+```
+    03_queries_select.sql
+    04_updates.sql
+    05_deletes.sql
 
-Utilize os demais scripts:
+------------------------------------------------------------------------
 
-SELECT
+## 📊 8. Checklist Acadêmico
 
-UPDATE
+  Requisito                 Situação
+  ------------------------- ------------
+  Minimundo                 ✔ Atendido
+  DER                       ✔ Atendido
+  Modelo Lógico             ✔ Atendido
+  SQL (CREATE)              ✔ Atendido
+  SQL (INSERT)              ✔ Atendido
+  SQL (SELECT)              ✔ Atendido
+  SQL (UPDATE)              ✔ Atendido
+  SQL (DELETE)              ✔ Atendido
+  Repositório GitHub        ✔ Atendido
+  README Profissional       ✔ Atendido
+  Site completo             ✔ Atendido
+  Integridade referencial   ✔ Atendido
 
-DELETE
+------------------------------------------------------------------------
 
-📌 Site
+## 🔗 9. Tecnologias Utilizadas
 
-Abra o arquivo:
+-   MySQL 8\
+-   HTML5\
+-   CSS3\
+-   JavaScript ES6\
+-   Git & GitHub\
+-   Modelagem de Dados
 
-index.html
+------------------------------------------------------------------------
 
+## 📜 10. Licença
 
-Navegue pelas demais páginas do site normalmente.
+Projeto disponível para uso acadêmico e educacional.
 
-📊 8. Requisitos Acadêmicos — Checklist
-Exigência	Situação
-Minimundo	✔ Atendido
-DER	✔ Atendido
-Modelo Lógico	✔ Atendido
-SQL (CREATE)	✔ Atendido
-SQL (INSERT)	✔ Atendido
-SQL (SELECT)	✔ Atendido
-SQL (UPDATE)	✔ Atendido
-SQL (DELETE)	✔ Atendido
-Repositório GitHub	✔ Atendido
-README Profissional	✔ Atendido
-Site completo	✔ Atendido
-Integridade referencial	✔ Atendido
-Estrutura robusta	✔ Atendido
-🔗 9. Tecnologias Utilizadas
+------------------------------------------------------------------------
 
-MySQL 8 / MariaDB
+## ✉ Contato
 
-HTML5
-
-CSS3 (Flexbox + Grid)
-
-JavaScript (ES6)
-
-Modelagem DER e Modelo Lógico
-
-Git / GitHub
-
-📜 10. Licença
-
-Este projeto pode ser utilizado para fins acadêmicos, educacionais e de estudo, desde que citada a fonte.
+Para dúvidas relacionadas ao projeto, entre em contato com o
+desenvolvedor responsável.
